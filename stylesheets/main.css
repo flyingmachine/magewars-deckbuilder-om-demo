@@ -59,7 +59,7 @@ h6, .h6 {
   margin-top: 0;
   padding-top: 0;
   padding-bottom: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
   font-weight: bold; }
 
 h1, .h1 {
@@ -300,15 +300,10 @@ h4, .h4 {
   overflow-x: hidden; }
 
 .card-list {
-  width: 49.15254%;
   float: left;
-  margin-right: 1.69492%; }
+  width: 50%; }
   .card-list label {
     padding: 0 1.59075em; }
-  .card-list:last-child {
-    width: 49.15254%;
-    float: right;
-    margin-right: 0; }
 
 .fa.fa-exchange {
   display: inline-block;
@@ -340,9 +335,8 @@ h4, .h4 {
         margin-bottom: 0.75023em; } }
 
 .card-details {
-  width: 49.15254%;
   float: right;
-  margin-right: 0; }
+  width: 50%; }
 
 td {
   padding-right: 0.75em; }
@@ -360,8 +354,15 @@ td {
   right: 0.75em;
   z-index: 1; }
 
+.buy {
+  width: 24.05063%; }
+
+.buy a {
+  display: block;
+  padding: 0.75em 0.75em; }
+
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
   background: #efe8d5; }
 
 label {
@@ -415,7 +416,9 @@ h3 {
   background: #a61018;
   position: relative;
   color: white;
-  font-weight: normal; }
+  font-weight: normal;
+  font-family: "IM Fell DW Pica", Georgia, "Times New Roman", serif;
+  font-style: italic; }
   h3:after {
     display: block;
     position: absolute;
@@ -432,7 +435,9 @@ h4 {
   background: #b94d53;
   color: white;
   position: relative;
-  font-weight: normal; }
+  font-weight: normal;
+  font-family: "IM Fell DW Pica", Georgia, "Times New Roman", serif;
+  font-style: italic; }
   h4:after {
     display: block;
     position: absolute;
@@ -479,3 +484,12 @@ h4 {
 
 .disabled {
   opacity: 0.5; }
+
+.buy a {
+  background: black;
+  transition: 0.25s all;
+  color: white;
+  text-decoration: none;
+  font-weight: bold; }
+  .buy a:hover {
+    color: #a61018; }
